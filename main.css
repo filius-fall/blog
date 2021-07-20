@@ -1,0 +1,111 @@
+/* .navigation-bar{
+    list-style-type: none;
+    
+} */
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-items{
+    list-style-type: none;
+}
+.head-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: double;
+}
+.nav-li{
+    float: left;
+}
+.nav-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333333; */
+}
+
+.nav-li>a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: blue;
+    font-family: 'Caveat';
+    font-size: larger;
+
+}
+
+.my_image{
+    border-radius: 50%;
+}
+.child-nav1{
+    display: flex;
+    align-items: space-around;
+}
+.child-nav13{
+    padding: 30px;
+}
+
+.nav-li:hover{
+    font-weight: bold;
+    background-color: #3e8e41;
+
+}
+.name{
+    font-family: 'Gruppo';
+    font-size: 22px;
+    margin:0px;
+    float: right;
+    font-weight: bolder;
+}
+
+.content-div{
+    display: flex;
+    /* border: 2px solid black; */
+    /* margin-top: 75px; */
+    height: 500px;
+    width: 100%;
+    margin: 0;
+    padding-top: 55px;
+}
+.content-div-item1{
+    border-right: 1px solid blue;
+    flex-grow: 2;
+    text-align: center;
+    background-color: black;
+}
+.content-div-item2{
+    flex-grow: 0;
+    margin:0;
+    padding: 0;
+}
+
+.content-div-item1 p{
+    text-align: center;
+    padding-top: 10px;
+    color: aquamarine;
+    text-align: justify;
+    width: 700px;
+    padding-left: 210px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Pangolin', cursive;
+    
+}
+
+.content-div-item1 h1{
+    color:aqua;
+    /* font-family: 'Tourney', cursive; */
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+
+}
+.content{
+    padding-top: 125px;
+}
