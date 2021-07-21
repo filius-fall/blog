@@ -7,6 +7,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 
@@ -17,10 +18,21 @@ body, html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: double;
+    /* border-bottom: double; */
+    /* position:fixed; */
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 10px;
+    width: 100%;
+    padding-top: 10px;
+    /* visibility: visible; */
+    /* opacity: 0.2; */
 }
 .nav-li{
     float: left;
+    height: 60px;
+    transition: 0.7s all;
 }
 .nav-ul{
     list-style-type: none;
@@ -32,13 +44,19 @@ body, html {
 
 .nav-li>a{
     display: block;
-    color: black;
+    /* color: black; */
+    text-decoration:solid wheat;
     text-align: center;
     padding: 20px;
-    text-decoration: blue;
+    padding-top: 0;
+    /* text-decoration:aqua; */
     font-family: 'Caveat';
-    font-size: larger;
+    font-size: 24px;
 
+}
+
+.nav-li p{
+    color: antiquewhite;
 }
 
 .my_image{
@@ -49,47 +67,58 @@ body, html {
     align-items: space-around;
 }
 .child-nav13{
-    padding: 30px;
+    padding: 0px;
+    padding-top: 30px;
 }
-
+.child-nav2{
+    padding-left: 50px ;
+    margin-left: 400px;
+    margin-right: 0;
+}
 .nav-li:hover{
-    font-weight: bold;
-    background-color: #3e8e41;
+    font-weight: bolder;
+    background-color:#FF00FF;
+    opacity:0.5;
+    /* height: 10px; */
+    /* padding-top: 30px; */
 
 }
 .name{
     font-family: 'Gruppo';
-    font-size: 22px;
+    font-size: 30px;
     margin:0px;
     float: right;
     font-weight: bolder;
+    color: aqua;
 }
 
-.content-div{
-    display: flex;
-    /* border: 2px solid black; */
-    /* margin-top: 75px; */
-    height: 500px;
-    width: 100%;
-    margin: 0;
-    padding-top: 55px;
-}
+
 .content-div-item1{
-    border-right: 1px solid blue;
-    flex-grow: 2;
+    /* border-right: 1px solid blue; */
+    flex-grow: 1;
     text-align: center;
+    /* background-color: black; */
+
     background-color: black;
+    opacity: 0.6;
+    margin-left: 40px
+
+
+
 }
 .content-div-item2{
     flex-grow: 0;
     margin:0;
-    padding: 0;
+    padding: 50px;
+    /* background-color: black;
+    opacity: 0.4; */
+
 }
 
 .content-div-item1 p{
     text-align: center;
     padding-top: 10px;
-    color: aquamarine;
+    color:aqua;
     text-align: justify;
     width: 700px;
     padding-left: 210px;
@@ -105,7 +134,59 @@ body, html {
     font-family: 'Caveat', cursive;
     font-size: 50px;
 
+
 }
 .content{
-    padding-top: 125px;
+    padding-top: 80px;
+    padding-right: 50px;
+
+}
+.content-image{
+    border-radius: 50%;
+    margin-top: 80px;
+}
+.second-div{
+    height: 680px;
+    width: 100%;
+    border: 2px solid blue;
+    margin:0;
+    padding:0%;
+    background: url("media/div1_image.jpg") no-repeat fixed;
+    background-size : 99.9%;
+
+
+}
+.third-div{
+    height: 680px;
+    width: 100%;
+    border: 2px solid black;
+}
+
+
+.content-div{
+    display: flex;
+    /* border: 2px solid black; */
+    /* margin-top: 75px; */
+    /* background-color: black;
+    opacity: 0.4; */
+    bottom: 0;
+    padding-top: 70px;
+
+
+}
+
+.head-nav::-webkit-scrollbar-track{
+    opacity: 1;
+}
+
+
+.overlay-div{
+    height: 680px;
+    width: 100%;
+    margin: 0;
+    /* padding-top: 55px; */
+    background: url("media/image4.png") no-repeat fixed;
+    /* background-size: cover; */
+    background-size : 99.9%;
+    /* padding-top: 150px; */
 }
